@@ -19,3 +19,5 @@
 ##### Access Control Lists:
 - access-list ASA extended permit tcp any any
 - access-list ASA extended permit icmp any any
+##### Access Group:
+- access-group ASA in interface outside
