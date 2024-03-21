@@ -12,7 +12,7 @@ So I've decided I'm gonna drop the dhcp pool and try to still get it from the in
 - Status =  up
 - Has an ip (the default gateway of vlan 10 i.e. 192.168.10.1) 
 - Is linked to interface Ethernet 0/2
-- Nameif dmz had to sacrifice with: no forward vlan 1 (the inside interface i.e. Ethernet 0/1)
+- Nameif dmz works, but had to sacrifice by doing: no forward vlan 1 (the inside interface i.e. Ethernet 0/1)
 
 ### Problems to solve with the dmz
 - Forward back to vlan 1 / find a way to have more than 2 interfaces forwarding to each other.
