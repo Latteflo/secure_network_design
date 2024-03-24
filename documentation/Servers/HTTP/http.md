@@ -5,10 +5,10 @@ The HTTP server is located within the DMZ (Demilitarized Zone) with the IP addre
 
 ## Server Details
 
-- **IP Address:** `192.168.10.11`
+- **IP Address:** `200.200.10.11`
 - **Subnet Mask:** `255.255.255.0`
-- **Default Gateway:** `192.168.10.1`
-- **DNS Server:** `192.168.10.10`
+- **Default Gateway:** `200.200.10.1`
+- **DNS Server:** `200.200.10.10`
 
 ## Configuration
 
@@ -16,9 +16,9 @@ The server's network settings are statically assigned to ensure consistent acces
 
 ```plaintext
 Display Name: HTTP
-Default Gateway: 192.168.10.1
-DNS Server: 192.168.10.10
-IPv4 Address: 192.168.10.11
+Default Gateway: 200.200.10.1
+DNS Server: 200.200.10.10
+IPv4 Address: 200.200.10.11
 Subnet Mask: 255.255.255.0
 ```
 
