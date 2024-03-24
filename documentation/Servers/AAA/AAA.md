@@ -20,7 +20,7 @@ It has the following configuration:
    - **Port**:`49`
    - **Shared Secret Key**:`cisco456`
 
-![alt text](Radius_Tacacs+.png)
+![alt text](assets/Radius_Tacacs+.png)
 
 Next we assign usernames and passwords to the users in the network.
 
@@ -54,4 +54,4 @@ For demonstration purposes, we used the following usernames and passwords:
 
 ### And sure enough `admin` was able to log in successfully.
 
-   ![alt text](userLogin.png)
+   ![alt text](assets/userLogin.png)

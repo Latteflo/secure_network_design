@@ -1,11 +1,11 @@
 # DMZ Setup
 
-In addition to the basic network setup, we also tried to set up a DMZ on the ASA firewall.
+In addition to the basic network setup, we also tried to set up a DMZ on the ASA firewall to segregate public-facing services from the internal network. However, we encountered licensing and configuration challenges.
 
-![alt text](design-network1.png)
 
-The DMZ was supposed to be a separate network that would host the servers.
-Unfortunatelly we run into some issues with the ASA firewall and the DMZ setup was not fully functional. 
+![alt text](assets/design-network1.png)
+
+
 
 ### DMZ setup
 
@@ -30,6 +30,13 @@ Within the DMS_trouble package, the ASA firewall is configured as follows:
 - Is linked to interface Ethernet 0/2
 - Nameif dmz works, but had to sacrifice by doing: no forward vlan 1 (the inside interface i.e. Ethernet 0/1)
 
-### Problems to solve with the dmz
-- Forward back to vlan 1 / find a way to have more than 2 interfaces forwarding to each other.
-- Get the OG dhcp server to work all the way to the dmz / find some way to give the servers ip addresses
+
+### Issues Encountered
+
+- Unable to forward traffic between more than two VLANs due to license limitations.
+- Difficulties with allocating IP addresses from the designated DHCP server to devices in the DMZ.
+
+### Future Objectives
+
+- Restore forwarding to VLAN 1 or find an alternative method to allow inter-VLAN routing.
+- Resolve the DHCP IP allocation issue for the DMZ.

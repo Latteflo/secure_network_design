@@ -8,9 +8,9 @@ Hey there! You've stumbled upon our humble abode where we’re busy crafting a n
 ### Team Effort
 
 3 brainiacs/group: 
-- Teddy 
-- Esaü 
-- Flo
+- **Teddy**: The visionary, always three steps ahead.
+- **Esaü**: The executor, turns plans into reality.
+- **Flo**: The detailer, fine-tunes everything to perfection.
 
 ## The Lowdown on Our Project
 
@@ -26,10 +26,8 @@ We’ve got a mission: to yank a client’s office into the 21st century by netw
 
 ## The Game plan : 
 - **Network Not-So-Trivial Pursuit:** Does our Packet Tracer simulation actually work? You betcha. 
-    - **The Blueprint (Packet Tracer File):** Check out our .pkt to see how we roll.
-   - **The Big Picture:** Are we seeing the forest for the trees?
-
-
+- **The Blueprint (Packet Tracer File):** Check out our .pkt to see how we roll.
+- **The Big Picture:** Are we seeing the forest for the trees?
 - **Fortress Foundations:** Did we go all medieval with the security? Like a digital moat.
 
 ## The Nuts and Bolts (But Mostly Wires)
@@ -44,19 +42,14 @@ Our setup’s got more layers than a lasagna. We’ve got servers doing server t
 - **Production:** 10 desks for making dreams come true.
 - **Support:** 20 desks, divided by two, for saying "Have you tried turning it off and on again?"
 
-### IP Sitch and VLAN Vibes
-  **IP Addressing:** We've got a plan for every IP.
-- **Router:** The big cheese, with an IP of `
-- **Switch:** The switch that makes it all happen  
-  
-
-- **Servers:** DNS, SMTP, and iSCSI servers with IPs of `
-- **Cloud-PT:** Our internet simulation, with an IP 
+### Floor plan
+  - **[Routers](documentation/Routers/Routers.md):** We love them, we hate them, but we can't live without them. 
+  - **[Switches](documentation/Switches/switches.md):** The switch that makes it all happen  (and sometimes not happen).
+  - **[Servers](documentation/Servers/servers.md):** DNS, SMTP,AAA and iSCSI servers are all in the mix.
+  - **[Cloud]():** Our internet simulation, because we can't have a network without the internet.
+  - **[VLANs](documentation/VLAN/VLAN_docu):** We've got VLANs for days, each with its own purpose.
 
    ![alt text](assets/screens/outside.png)
-
-
-- **[VLANs](documentation/VLAN/VLAN_docu):** We've got VLANs for days, each with its own purpose.
 
     Each VLAN has its own subnet, and we've got a plan for every IP.
    Here's the breakdown:
