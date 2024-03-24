@@ -4,6 +4,6 @@ The STMD server is a critical component of the network infrastructure, providing
 
 The standard configuration and details of the STMD server:
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 - **Access Controls:** Standard user access controls are applied.

@@ -66,8 +66,6 @@ Our setup’s got more layers than a lasagna. Here’s the breakdown:
       - **VLAN 30:** Where Study get stuff done.
       - **VLAN 40:** Production's playground.
 
-
-
 ## IP Addressing Scheme
 
 This section details the IP addressing layout designed for the secure network. Each sector of the network is allocated a specific IP range and VLAN ID to segregate traffic efficiently and enhance security.
