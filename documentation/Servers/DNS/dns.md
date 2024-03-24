@@ -7,7 +7,7 @@ The DNS server is a crucial part of the network infrastructure. It translates do
 ### Server Details
 
 - **Server Name**: DNS
-- **IP Address**: `192.168.10.10`
+- **IP Address**: `200.200.10.10`
 - **Subnet Mask**:`255.255.255.0`
   
 ![alt text](assets/dnsip.png)
