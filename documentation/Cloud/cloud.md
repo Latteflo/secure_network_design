@@ -2,7 +2,7 @@
 
 Our network wouldn't be complete without the internet. We've got a Cloud-PT device to simulate the internet connection.
 
-![alt text](internet.png)
+![alt text](assets/internet.png)
 
 Here's how we set it up:
 ### Cloud-PT Cloud2
@@ -54,4 +54,4 @@ Two Cisco Catalyst 2960-24TT switches are involved in connecting the end devices
 
 And here we have a surprise for you! The internet is a vast place, and we've got a little something extra to show you. 
 
-![alt text](webpage.png)
+![alt text](assets/webpage.png)

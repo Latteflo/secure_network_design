@@ -42,7 +42,7 @@ Our setup’s got more layers than a lasagna. Here’s the breakdown:
 - **[Routers](documentation/Routers/Routers.md):** The traffic cops of the network.
 - **[Switches](documentation/Switches/Switches.md):** The traffic directors of the network.
 - **[Servers](documentation/Servers/Servers.md):** The network’s workhorses.
-- **[Cloud](documentation/Servers/Cloud/Cloud.md):** The internet, because what’s a network without the internet?
+- **[Cloud](documentation/Cloud/Cloud.md):** The internet, because what’s a network without the internet?
 - **[VLANs](documentation/Servers/VLAN/VLAN.md):** The network’s neighborhoods, each with its own purpose.
 - **[AAA](documentation/Servers/AAA/AAA.md):** The network’s bouncer, making sure only the right folks get in.
 - **[DMZ](documentation/Servers/DMZ/DMZ.md):** The network’s no-man’s-land, where the bad guys get stuck.
@@ -58,7 +58,7 @@ Our setup’s got more layers than a lasagna. Here’s the breakdown:
   - **[Switches](documentation/Switches/switches.md):** The switch that makes it all happen  (and sometimes not happen).
   - **[Servers](documentation/Servers/servers.md):** DNS, SMTP,AAA and iSCSI servers are all in the mix.
   - **[Cloud]():** Our internet simulation, because we can't have a network without the internet.
-  - **[VLANs](documentation/VLAN/VLAN_docu):** We've got VLANs for days, each with its own purpose.
+  - **[VLANs](documentation/VLAN/VLAN):** We've got VLANs for days, each with its own purpose.
     - Each VLAN has its own subnet, and we've got a plan for every IP.
         Here's the breakdown:
       - **VLAN 10:** The Servers. Where the internet meets the network.
@@ -101,16 +101,16 @@ This was quite a treat! We've got security measures that are tighter than a drum
 
  Our pick of choice for the firewall was the Cisco ASA 5505, but we had to make do with the Cisco NR router.
  To this we implemented the following security measures:
-- **[RADIUS and TACACS +](<[text](documentation/AAA/AAA.md)>) :** It's like the club's VIP list, but for network access.
+- **[RADIUS and TACACS +](documentation/Servers/AAA/AAA.md) :** It's like the club's VIP list, but for network access.
 
 ## The Fine Print
-- **[DMZ Drama](<dmz trouble/asa_config.md>):** We considered a DMZ, but we're still mulling it over.   
-- **CPT Limitation Limbo:** We hit a snag, but we’re crafty and we’ll figure it out...eventually.
+- **[DMZ Drama](documentation/Servers/DMZ/DMZ.md):** We considered a DMZ, but we had a bit of a hiccup with the [ASA 5505](documentation/Servers/ASA/ASA.md)
+- **[iSCSI Illusions](documentation/Servers/iSCSI/iSCSI.md):** We've got a faux iSCSI setup that's as real as a unicorn.
 
 ## The Grand Finale
 We’re not done yet! We’ve got a few more tricks up our sleeves before we call it a day. Stay tuned!
 
 ## Shout-Outs
-- Props to BeCode for throwing down the gauntlet!
+- Props to **BeCode** for throwing down the gauntlet!
 - High-fives to all our brainy teammates for making this happen!
 

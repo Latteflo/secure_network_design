@@ -1,6 +1,6 @@
 # DMZ Setup
 
-In addition to the basic network setup, we also tried to set up a DMZ on the ASA firewall to segregate public-facing services from the internal network. However, we encountered licensing and configuration challenges.
+In addition to the basic network setup, we also tried to set up a DMZ on the [ASA firewall](../ASA/ASA.md) to segregate public-facing services from the internal network. However, we encountered licensing and configuration challenges.
 
 
 ![alt text](assets/design-network1.png)
