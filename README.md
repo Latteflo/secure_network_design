@@ -72,11 +72,7 @@ This was quite a treat! We've got security measures that are tighter than a drum
 
  Our pick of choice for the firewall was the Cisco ASA 5505, but we had to make do with the Cisco NR router.
  To this we implemented the following security measures:
-- **RADIUS and TACACS + :** It's like the club's VIP list, but for network access.
-  
-  ![alt text](assets/screens/routerConfigR.png)
-  
-  ![alt text](assets/screens/radiusWorks.png)
+- **[RADIUS and TACACS +](<[text](documentation/AAA/AAA.md)>) :** It's like the club's VIP list, but for network access.
 
 ## The Fine Print
 - **[DMZ Drama](<dmz trouble/asa_config.md>):** We considered a DMZ, but we're still mulling it over.   
