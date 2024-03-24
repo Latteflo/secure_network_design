@@ -32,9 +32,8 @@ Working with packet tracer be like:
 The response:
 4. The outgoing port has an outbound traffic access-list with an ID of 20. The device checks the packet against the access-list.
 5. The packet does not match the criteria of any statement in the access-list. The packet is denied and dropped by default.
-Ok then I'll explicitly allow this exact ip in the access-list and let's see what happens.
----
-Me: `access-list 20 permit host 8.8.8.8`
+Ok then I'll explicitly allow this exact ip in the access-list and let's see what happens.\
+Me: `access-list 20 permit host 8.8.8.8`\
 Packet Tracer: ping successful
 
 Well I guess I did something wrong. Maybe I have to include "host" even before a network address even though in their rules they explicitly say that host is for "a SINGLE host address" but you never know let's try.
