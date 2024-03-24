@@ -47,38 +47,6 @@ Our setup’s got more layers than a lasagna. Here’s the breakdown:
 - **[AAA](documentation/Servers/AAA/AAA.md):** The network’s bouncer, making sure only the right folks get in.
 - **[DMZ](documentation/Servers/DMZ/DMZ.md):** The network’s no-man’s-land, where the bad guys get stuck.
 
-## IP Addressing Scheme
-
-This section details the IP addressing layout designed for the secure network. Each sector of the network is allocated a specific IP range and VLAN ID to segregate traffic efficiently and enhance security.
-
-| Sector                | IP Range         | Subnet Mask     | VLAN ID |
-|-----------------------|------------------|-----------------|---------|
-| Management| `192.168.10.0/24`| `255.255.255.0` | `10`    |
-| Study                 | `192.168.20.0/24`| `255.255.255.0` | `20`    |
-| Production            | `192.168.30.0/24`| `255.255.255.0` | `30`    |
-| Support Sector 1      | `192.168.40.0/24`| `255.255.255.0` | `40`    |
-| Support Sector 2      | `192.168.50.0/24`| `255.255.255.0` | `50`    |
-
-### Subnetting Strategy
-
-The IP addressing scheme utilizes a subnetting strategy that allows for efficient use of IP space while ensuring each sector has adequate addresses for current and future needs. Each subnet is designed to accommodate the specific number of workstations and devices in its sector, with room for expansion.
-
-## VLAN Configuration
-
-VLANs are used in conjunction with the IP addressing scheme to further segment and secure the network. Each VLAN corresponds to a specific sector, ensuring data and device isolation. This setup enhances security by limiting broadcast domains and provides flexibility in managing network traffic.
-
-## Address Allocation
-
-Addresses within each subnet are allocated as follows:
-
-- The first usable IP (`x.x.x.1`) is typically assigned to the gateway/router interface that serves each subnet.
-- Static IPs (`x.x.x.2` to `x.x.x.10`) are reserved for servers, printers, and other permanent devices.
-- DHCP is configured to dynamically assign IPs starting from `x.x.x.11` onwards to workstations and temporary devices.
-
-This systematic approach to IP allocation simplifies network management, aids in troubleshooting, and enhances security through clear segmentation.
-
-
-
 ### The Plot (Sector Breakdown)
 - **Management/Secretariat:** 5 desks where the magic happens.
 - **Study:** 8 desks for scholarly pursuits.
@@ -97,6 +65,41 @@ This systematic approach to IP allocation simplifies network management, aids in
       - **VLAN 20:** The cool kids' table. Management and Support.
       - **VLAN 30:** Where Study get stuff done.
       - **VLAN 40:** Production's playground.
+
+
+
+## IP Addressing Scheme
+
+This section details the IP addressing layout designed for the secure network. Each sector of the network is allocated a specific IP range and VLAN ID to segregate traffic efficiently and enhance security.
+
+We also have a subnetting strategy in place to ensure that each sector has adequate IP addresses for current and future needs.
+
+
+| Sector           | IP Range          | Subnet Mask     | VLAN ID | Usable Hosts |
+|------------------|-------------------|-----------------|---------|--------------|
+| Management       | `192.168.10.0/24` | `255.255.255.0` | `10`    | 254          |
+| Study            | `192.168.20.0/24` | `255.255.255.0` | `20`    | 254          |
+| Production       | `192.168.30.0/24` | `255.255.255.0` | `30`    | 254          |
+| Support Sector 1 | `192.168.40.0/24` | `255.255.255.0` | `40`    | 254          |
+| Support Sector 2 | `192.168.50.0/24` | `255.255.255.0` | `50`    | 254          |
+
+### Subnetting Strategy
+
+The IP addressing scheme utilizes a subnetting strategy that allows for efficient use of IP space while ensuring each sector has adequate addresses for current and future needs. Each subnet is designed to accommodate the specific number of workstations and devices in its sector, with room for expansion.
+
+
+## Address Allocation
+
+Addresses within each subnet are allocated as follows:
+
+- The first usable IP (`x.x.x.1`) is typically assigned to the gateway/router interface that serves each subnet.
+- Static IPs (`x.x.x.2` to `x.x.x.10`) are reserved for servers, printers, and other permanent devices.
+- DHCP is configured to dynamically assign IPs starting from `x.x.x.11` onwards to workstations and temporary devices.
+
+This systematic approach to IP allocation simplifies network management, aids in troubleshooting, and enhances security through clear segmentation.
+
+
+
 
 ### Security (aka The Bouncer)
 This was quite a treat! We've got security measures that are tighter than a drum, and because Cisco Packet Tracer is our long-time friend (and sometimes foe), we've tried the inplementation of a firewall that turned up to be a bit of a diva. As such we had to take a step back and re-evaluate our approach.

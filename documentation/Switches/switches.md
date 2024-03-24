@@ -15,3 +15,4 @@ We used the following switches in our network:
 - Multiple `2962-24TT` switches - to connect the different departments to the network.
   
      ![alt text](assets/switch.png)
+
