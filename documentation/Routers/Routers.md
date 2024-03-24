@@ -1,8 +1,6 @@
 # Routers 
 
-In total we have a broderhood of 6 routers: 5 `Cisco 1941` routers and 1 `Cisco 2911` router.
-
-![alt text](routers.png)
+In total we have a broderhood os several types of routers: `Cisco 1941` routers and  `Cisco 2911` router.
 
 
 ### Configuration

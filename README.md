@@ -1,40 +1,83 @@
 # Secure Network Design Project – No Nonsense Network Know-How
 
-
 ## So, What's the Big Idea?
 
-Hey there! You've stumbled upon our humble abode where we’re busy crafting a network that's secure enough to make Fort Knox envious. This isn't just any network; it’s a modern marvel that balances cost with a fortress-level security stance.
+Hey there! You've stumbled upon our humble lair where we're busy crafting a network that's secure enough to make the anyone envious. This isn't just any network; it's a modern marvel that balances cost with fortress-level security.
 
 ### Team Effort
 
-3 brainiacs/group: 
+3 brainiacs/group:
 - **Teddy**: The visionary, always three steps ahead.
 - **Esaü**: The executor, turns plans into reality.
 - **Flo**: The detailer, fine-tunes everything to perfection.
 
 ## The Lowdown on Our Project
 
-We’ve got a mission: to yank a client’s office into the 21st century by networking the heck out of it.
+We've got a mission: to yank a client’s office into the 21st century by networking the heck out of it.
  
- We’re talking about a setup that screams efficiency(!), oozes security(!!!), and doesn’t break the bank (...too much ).
+We’re talking about a setup that screams efficiency(!), oozes security(!!!), and doesn’t break the bank (...too much).
 
 ## Here's How We Roll
+
 - **Simulate to Dominate:** Using Cisco Packet Tracer to get a bird's-eye view of our handiwork.
-- **Documentation Domination:** Writing up stuff so well, it'll be crystal years from now.
+- **Documentation Domination:** Writing up stuff so well, it'll be crystal clear years from now.
 - **Security Obsession:** We're basically digital ninjas keeping the bad guys at bay.
 - **Show and Tell:** We’ll explain our moves so even our grannies would get it.
 
-## The Game plan : 
-- **Network Not-So-Trivial Pursuit:** Does our Packet Tracer simulation actually work? You betcha. 
-- **The Blueprint (Packet Tracer File):** Check out our .pkt to see how we roll.
+## The Game Plan
+
+- **Network Not-So-Trivial Pursuit:** Does our Packet Tracer simulation actually work? You betcha.
+- **The Blueprint (Packet Tracer File):** Check out our `.pkt` to see how we roll.
 - **The Big Picture:** Are we seeing the forest for the trees?
 - **Fortress Foundations:** Did we go all medieval with the security? Like a digital moat.
 
 ## The Nuts and Bolts (But Mostly Wires)
+
 Our network’s a thing of beauty. There's a sketch below that shows all the connections, kind of like a family tree but for computers.
 
 ### The Setup
-Our setup’s got more layers than a lasagna. We’ve got servers doing server things, a firewall that's hotter than a summer barbecue, and switches that... well, switch.
+
+Our setup’s got more layers than a lasagna. Here’s the breakdown:
+
+- **[Routers](documentation/Routers/Routers.md):** The traffic cops of the network.
+- **[Switches](documentation/Switches/Switches.md):** The traffic directors of the network.
+- **[Servers](documentation/Servers/Servers.md):** The network’s workhorses.
+- **[Cloud](documentation/Cloud/Cloud.md):** The internet, because what’s a network without the internet?
+- **[VLANs](documentation/VLAN/VLAN_docu.md):** The network’s neighborhoods, each with its own purpose.
+- **[AAA](documentation/AAA/AAA.md):** The network’s bouncer, making sure only the right folks get in.
+- **[DMZ](documentation/DMZ/DMZ.md):** The network’s no-man’s-land, where the bad guys get stuck.
+
+## IP Addressing Scheme
+
+This section details the IP addressing layout designed for the secure network. Each sector of the network is allocated a specific IP range and VLAN ID to segregate traffic efficiently and enhance security.
+
+| Sector                | IP Range         | Subnet Mask     | VLAN ID |
+|-----------------------|------------------|-----------------|---------|
+| Management| `192.168.10.0/24`| `255.255.255.0` | `10`    |
+| Study                 | `192.168.20.0/24`| `255.255.255.0` | `20`    |
+| Production            | `192.168.30.0/24`| `255.255.255.0` | `30`    |
+| Support Sector 1      | `192.168.40.0/24`| `255.255.255.0` | `40`    |
+| Support Sector 2      | `192.168.50.0/24`| `255.255.255.0` | `50`    |
+
+### Subnetting Strategy
+
+The IP addressing scheme utilizes a subnetting strategy that allows for efficient use of IP space while ensuring each sector has adequate addresses for current and future needs. Each subnet is designed to accommodate the specific number of workstations and devices in its sector, with room for expansion.
+
+## VLAN Configuration
+
+VLANs are used in conjunction with the IP addressing scheme to further segment and secure the network. Each VLAN corresponds to a specific sector, ensuring data and device isolation. This setup enhances security by limiting broadcast domains and provides flexibility in managing network traffic.
+
+## Address Allocation
+
+Addresses within each subnet are allocated as follows:
+
+- The first usable IP (`x.x.x.1`) is typically assigned to the gateway/router interface that serves each subnet.
+- Static IPs (`x.x.x.2` to `x.x.x.10`) are reserved for servers, printers, and other permanent devices.
+- DHCP is configured to dynamically assign IPs starting from `x.x.x.11` onwards to workstations and temporary devices.
+
+This systematic approach to IP allocation simplifies network management, aids in troubleshooting, and enhances security through clear segmentation.
+
+
 
 ### The Plot (Sector Breakdown)
 - **Management/Secretariat:** 5 desks where the magic happens.
@@ -48,16 +91,13 @@ Our setup’s got more layers than a lasagna. We’ve got servers doing server t
   - **[Servers](documentation/Servers/servers.md):** DNS, SMTP,AAA and iSCSI servers are all in the mix.
   - **[Cloud]():** Our internet simulation, because we can't have a network without the internet.
   - **[VLANs](documentation/VLAN/VLAN_docu):** We've got VLANs for days, each with its own purpose.
+    - Each VLAN has its own subnet, and we've got a plan for every IP.
+        Here's the breakdown:
+      - **VLAN 10:** The Servers. Where the internet meets the network.
+      - **VLAN 20:** The cool kids' table. Management and Support.
+      - **VLAN 30:** Where Study get stuff done.
+      - **VLAN 40:** Production's playground.
 
-   ![alt text](assets/screens/outside.png)
-
-    Each VLAN has its own subnet, and we've got a plan for every IP.
-   Here's the breakdown:
-- **VLAN 10:** The Servers. Where the internet meets the network.
-- **VLAN 20:** The cool kids' table. Management and Support.
-- **VLAN 30:** Where Study get stuff done.
-- **VLAN 40:** Production's playground.
-  
 ### Security (aka The Bouncer)
 This was quite a treat! We've got security measures that are tighter than a drum, and because Cisco Packet Tracer is our long-time friend (and sometimes foe), we've tried the inplementation of a firewall that turned up to be a bit of a diva. As such we had to take a step back and re-evaluate our approach.
 
@@ -75,5 +115,6 @@ This was quite a treat! We've got security measures that are tighter than a drum
 We’re not done yet! We’ve got a few more tricks up our sleeves before we call it a day. Stay tuned!
 
 ## Shout-Outs
-- Props to BeCode for throwing down the gauntlet.
-- High-fives to all our brainy teammates for making this happen! ^^
+- Props to BeCode for throwing down the gauntlet!
+- High-fives to all our brainy teammates for making this happen!
+
