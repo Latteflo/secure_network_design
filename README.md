@@ -87,9 +87,6 @@ We also have a subnetting strategy in place to ensure that each sector has adequ
 
 The IP addressing scheme utilizes a subnetting strategy that allows for efficient use of IP space while ensuring each sector has adequate addresses for current and future needs. Each subnet is designed to accommodate the specific number of workstations and devices in its sector, with room for expansion.
 
-
-## Address Allocation
-
 Addresses within each subnet are allocated as follows:
 
 - The first usable IP (`x.x.x.1`) is typically assigned to the gateway/router interface that serves each subnet.
@@ -97,8 +94,6 @@ Addresses within each subnet are allocated as follows:
 - DHCP is configured to dynamically assign IPs starting from `x.x.x.11` onwards to workstations and temporary devices.
 
 This systematic approach to IP allocation simplifies network management, aids in troubleshooting, and enhances security through clear segmentation.
-
-
 
 
 ### Security (aka The Bouncer)
