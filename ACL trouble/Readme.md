@@ -36,6 +36,6 @@ Ok then I'll explicitly allow this exact ip in the access-list and let's see wha
 Me: `access-list 20 permit host 8.8.8.8`\
 Packet Tracer: ping successful
 
-Well I guess I did something wrong. Maybe I have to include "host" even before a network address even though in their rules they explicitly say that host is for "a SINGLE host address" but you never know let's try.
+Well I guess I did something wrong. Maybe I have to include "host" before a network address even though in their syntax it explicitly says that host is for "a SINGLE host address" but you never know let's try.
 
 I have edited my config to test that theory and cisco said fuck you.
