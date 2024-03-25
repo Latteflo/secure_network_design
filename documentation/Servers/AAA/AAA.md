@@ -53,4 +53,4 @@ For demonstration purposes, we used the following usernames and passwords:
 
 ### And sure enough `admin` was able to log in successfully.
 
-![alt text](image.png)
+![alt text](userlogin.png)

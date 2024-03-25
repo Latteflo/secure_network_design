@@ -110,6 +110,10 @@ This was quite a treat! We've got security measures that are tighter than a drum
 ## The Grand Finale
 We’re not done yet! We’ve got a few more tricks up our sleeves before we call it a day. Stay tuned!
 
+
+ ![text](assets/fullimages/global.png) ![text](<assets/fullimages/high availability.png>) ![text](assets/fullimages/internet.png) ![text](assets/fullimages/network.png)
+
+
 ## Shout-Outs
 - Props to **BeCode** for throwing down the gauntlet!
 - High-fives to all our brainy teammates for making this happen!
