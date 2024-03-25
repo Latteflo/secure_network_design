@@ -2,7 +2,7 @@
 
 For educational purposes, we have an ASA firewall (please check the asa.pkg file)
 
-![alt text](assets/asa.png)
+![alt text](assets/ASA.png)
 
 **The reason it is not integrated in the big network is because of the limitations of the simulation software.**
 
