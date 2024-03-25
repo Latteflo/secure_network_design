@@ -43,7 +43,7 @@ Our setup’s got more layers than a lasagna. Here’s the breakdown:
 - **[Switches](documentation/Switches/Switches.md):** The traffic directors of the network.
 - **[Servers](documentation/Servers/Servers.md):** The network’s workhorses.
 - **[Cloud](documentation/Cloud/Cloud.md):** The internet, because what’s a network without the internet?
-- **[VLANs](documentation/Servers/VLAN/VLAN.md):** The network’s neighborhoods, each with its own purpose.
+- **[VLANs](documentation/VLAN/VLAN.md):** The network’s neighborhoods, each with its own purpose.
 - **[AAA](documentation/Servers/AAA/AAA.md):** The network’s bouncer, making sure only the right folks get in.
 - **[DMZ](documentation/Servers/DMZ/DMZ.md):** The network’s no-man’s-land, where the bad guys get stuck.
 
